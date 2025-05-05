@@ -11,8 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+
 import { HomeComponent } from './pages/home/home.component';
 import { ContainerComponent } from './shared/container/container.component';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +25,17 @@ import { ContainerComponent } from './shared/container/container.component';
     FooterComponent,
     CardComponent,
     HomeComponent,
-    ContainerComponent
+    ContainerComponent,
+    CardBuscaComponent,
+    CardDepoimentoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
