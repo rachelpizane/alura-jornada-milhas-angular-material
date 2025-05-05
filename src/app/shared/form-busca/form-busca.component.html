@@ -6,7 +6,7 @@
         <mat-button-toggle value="bold"> <mat-icon>check</mat-icon>IDA E VOLTA</mat-button-toggle>
         <mat-button-toggle value="italic">SOMENTE IDA</mat-button-toggle>
       </mat-button-toggle-group>
-      <mat-chip-listbox aria-label="Fish selection">
+      <mat-chip-listbox (click)="openDialog()" aria-label="Seleção de passagem">
         <mat-chip-option>1 adulto</mat-chip-option>
         <mat-chip-option selected>Econômica</mat-chip-option>
       </mat-chip-listbox>
@@ -37,7 +37,7 @@
         <mat-datepicker-toggle matIconSuffix [for]="volta"></mat-datepicker-toggle>
         <mat-datepicker #volta></mat-datepicker>
       </mat-form-field>
-      <button mat-flat-button color="primary">BUSCAR</button> 
+      <button mat-flat-button color="primary">BUSCAR</button>
     </div>
   </form>
 </app-card>
