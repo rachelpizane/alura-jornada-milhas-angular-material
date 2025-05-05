@@ -1,0 +1,28 @@
+.mdc-card {
+  flex-direction: row;
+  gap: 16px;
+  align-items: start;
+}
+
+.card-depoimento{
+  max-width: 315px;
+  max-height: 216px;
+  padding: 12px 24px 12px 16px;
+  background-color: #FEF7FF;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .mat-mdc-card-title {
+    font-size: 16px;
+  }
+
+  .mat-mdc-card-header, .mat-mdc-card-content {
+    padding: 0;
+  }
+}
+
+
+
